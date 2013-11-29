@@ -1,0 +1,26 @@
+/*
+ * Basic post styling
+ * ----------------------------------------------------------------- */
+/*---------------------------------------------------------
+	Basic post styling
+------------------------------------------------------------ */
+
+.comments-link,
+.entry-meta {
+	a {
+		color: lighten($font-color, 20);
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
+.entry-content {		
+	a {
+		&:visited {
+			color: darken($link-color, 5);
+				}
+		&:hover {
+		color: $link-color-hover;
+		}
+	}
+}

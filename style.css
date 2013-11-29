@@ -8,3 +8,5 @@ Template:       twentytwelve
 */
 
 @import url("../twentytwelve/style.css");
+
+@import url('stylesheets/twiststyle.css')

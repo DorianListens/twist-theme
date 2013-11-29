@@ -1,0 +1,139 @@
+/* scaffolding.css.scss
+ * Basic structure
+ * ------------------------------------------------------------------ */
+
+/*---------------------------------------------------------
+ Body, links, basics
+------------------------------------------------------------ */
+a {
+	color: $link-color;
+	&:hover {
+		color: $link-color-hover;
+	}
+}
+
+/*---------------------------------------------------------
+	Header
+------------------------------------------------------------ */
+.site-header {
+	@include rem('padding', $vbase 0);
+	hgroup {
+		h1,
+		h2 {
+			text-align: center;
+			@media screen and (min-width: 600px) {
+				text-align: left;
+			}
+			a {
+				color: $link-color;
+				display: block;
+				text-decoration: none;
+				&:hover {
+					color: $link-color-hover;
+				}
+			}
+		}
+		h1 {
+			@include rem('font-size', $vbase);
+			line-height: ($evbase2/24);
+			@media screen and (min-width: 600px) {
+				@include rem('font-size', 26px );
+				line-height: ($evbase2/26);
+			}
+		}
+		h2 {
+			font-weight: normal;
+			@include rem('font-size', 13px );
+			line-height: ($evbase/13);
+			color: lighten($font-color, 20);
+		}
+	}
+}
+.header-image {
+	@include rem('margin-top', $vbase);
+}
+
+/*---------------------------------------------------------
+	Navigation Menu
+------------------------------------------------------------ */
+nav.main-navigation {
+	border-top: $divider;
+	border-bottom: $divider;
+	
+	li a {
+		color: $link-color;
+		&:hover {
+			color: $link-color-hover;
+		}
+	}
+// Submenu
+
+	li ul li a:hover {
+		background: #e3e3e3;
+		color: $font-color;
+	}
+	.current-menu-item > a,
+	.current-menu-ancestor > a,
+	.current_page_item > a,
+	.current_page_ancestor > a {
+		color: lighten($link-color-hover, 12);
+		font-weight: bold;
+	}
+}
+// Small menu
+nav[role="navigation"].main-small-navigation {
+	a {
+		color: lighten($font-color, 10);
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
+
+/*---------------------------------------------------------
+	Banner
+------------------------------------------------------------ */
+section[role="banner"] {
+	@include rem('margin-bottom', $vbase2);
+}
+/*---------------------------------------------------------
+	Sidebar
+------------------------------------------------------------ */
+#secondary aside {
+	@include rem('margin-bottom', $vbase2 );
+	h3 {
+		@include rem('margin-bottom', $vbase );
+	}
+	p,
+	li {
+		@include rem('font-size', 13px);
+		line-height: ($evbase/13);
+	}
+	a {
+		color: lighten($font-color, 20);
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
+/*---------------------------------------------------------
+	Footer
+------------------------------------------------------------ */
+footer[role="contentinfo"] {
+	clear: both;
+	@include clear();
+	@include rem('max-width', 960px);
+	@include rem('margin-top', $vbase);
+	margin-left: auto;
+	margin-right: auto;
+	@include rem('padding', $vbase 0);
+	border-top: $divider;
+	a {
+		@include rem('font-size', 12px);
+		line-height: ($evbase/12);
+		color: lighten($font-color, 14);
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
