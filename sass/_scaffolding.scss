@@ -71,8 +71,20 @@ nav.main-navigation {
 			color: $link-color-hover;
 		}
 	}
+
+	li {
+		@include rem('margin-left', 40px);
+		@include rem('margin-right', 0px);
+		position: relative;
+		}
+
 // Submenu
 
+	li ul li {
+	@include rem('margin-left', 0px);
+	@include rem('margin-right', 40px);
+	text-align: left;
+	}
 	li ul li a:hover {
 		background: #e3e3e3;
 		color: $font-color;
@@ -88,6 +100,7 @@ nav.main-navigation {
 // Small menu
 nav[role="navigation"].main-small-navigation {
 	a {
+		text-align: center;
 		color: lighten($font-color, 10);
 		&:hover {
 			color: $link-color;
