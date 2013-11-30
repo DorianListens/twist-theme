@@ -21,13 +21,17 @@ a {
 		h1,
 		h2 {
 			text-align: center;
+			clear: none;
 			@media screen and (min-width: 600px) {
 				text-align: left;
+
 			}
 			a {
 				color: $link-color;
 				display: block;
 				text-decoration: none;
+				font-size: 48px;
+				font-weight: 200;
 				&:hover {
 					color: $link-color-hover;
 				}
@@ -51,6 +55,8 @@ a {
 }
 .header-image {
 	@include rem('margin-top', $vbase);
+	float: right;
+	display: inline;
 }
 
 /*---------------------------------------------------------
@@ -58,6 +64,7 @@ a {
 ------------------------------------------------------------ */
 nav.main-navigation {
 	border: 0;
+	margin: 0;
 
 	ul.nav-menu {
 	text-align: right;
@@ -87,13 +94,13 @@ nav.main-navigation {
 	}
 	li ul li a:hover {
 		background: #e3e3e3;
-		color: $font-color;
+		color: $link-color-hover;
 	}
 	.current-menu-item > a,
 	.current-menu-ancestor > a,
 	.current_page_item > a,
 	.current_page_ancestor > a {
-		color: lighten($link-color-hover, 12);
+		color: lighten($link-color-hover, 5);
 		font-weight: bold;
 	}
 }
