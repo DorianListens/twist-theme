@@ -12,6 +12,11 @@ a {
 	}
 }
 
+body .site {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 /*---------------------------------------------------------
 	Header
 ------------------------------------------------------------ */
@@ -30,8 +35,8 @@ a {
 				color: $link-color;
 				display: block;
 				text-decoration: none;
-				font-size: 48px;
-				font-weight: 200;
+				font-size: 52px;
+				font-weight: 300;
 				&:hover {
 					color: $link-color-hover;
 				}
@@ -47,10 +52,17 @@ a {
 		}
 		h2 {
 			font-weight: normal;
-			@include rem('font-size', 13px );
-			line-height: ($evbase/13);
-			color: lighten($font-color, 20);
+			@include rem('font-size', 16px );
+			line-height: ($evbase/16);
+			color: $link-color;
+			display: inline;
+
 		}
+		.green {
+				color: $link-color-hover;
+				display: inline;
+				vertical-align: super;
+				}
 	}
 }
 .header-image {
