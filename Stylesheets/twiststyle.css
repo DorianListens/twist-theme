@@ -1,243 +1,109 @@
 /* Main Stylesheet for Twist Theme */
 /* line 44, ../sass/_preboot.scss */
-.clear {
-  zoom: 1;
-}
+.clear { zoom: 1; }
 /* line 36, ../sass/_preboot.scss */
-.clear:before, .clear:after {
-  display: table;
-  content: "";
-}
+.clear:before, .clear:after { display: table; content: ""; }
 /* line 40, ../sass/_preboot.scss */
-.clear:after {
-  clear: both;
-}
+.clear:after { clear: both; }
 
-/* scaffolding.css.scss
- * Basic structure
- * ------------------------------------------------------------------ */
-/*---------------------------------------------------------
- Body, links, basics
+/* scaffolding.css.scss Basic structure ------------------------------------------------------------------ */
+/*--------------------------------------------------------- Body, links, basics
 ------------------------------------------------------------ */
 /* line 8, ../sass/_scaffolding.scss */
-html {
-  font-size: 87.5%;
-}
+html { font-size: 87.5%; }
 
-/* line 12, ../sass/_scaffolding.scss */
-a {
-  color: navy;
-}
-/* line 14, ../sass/_scaffolding.scss */
-a:hover {
-  color: #34c53c;
-}
+/* line 13, ../sass/_scaffolding.scss */
+a { color: navy; }
+/* line 15, ../sass/_scaffolding.scss */
+a:hover { color: #34c53c; }
 
-/* line 19, ../sass/_scaffolding.scss */
-body .site {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+/* line 20, ../sass/_scaffolding.scss */
+body .site { margin-top: 0; margin-bottom: 0; }
 
-/* line 23, ../sass/_scaffolding.scss */
-body {
-  background-color: #fefefe;
-}
+/* line 24, ../sass/_scaffolding.scss */
+body { background-color: #fefefe; }
 
 /*---------------------------------------------------------
 	Header
 ------------------------------------------------------------ */
-/* line 30, ../sass/_scaffolding.scss */
-.site-header {
-  padding: 24px 0;
-  padding:  1.71429rem 0;
-}
-/* line 34, ../sass/_scaffolding.scss */
-.site-header hgroup h1,
-.site-header hgroup h2 {
-  text-align: center;
-  clear: none;
-}
-@media screen and (min-width: 600px) {
-  /* line 34, ../sass/_scaffolding.scss */
-  .site-header hgroup h1,
-  .site-header hgroup h2 {
-    text-align: left;
-  }
-}
-/* line 41, ../sass/_scaffolding.scss */
-.site-header hgroup h1 a,
-.site-header hgroup h2 a {
-  color: navy;
-  display: block;
-  text-decoration: none;
-  font-size: 52px;
-  font-weight: 300;
-}
-/* line 47, ../sass/_scaffolding.scss */
-.site-header hgroup h1 a:hover,
-.site-header hgroup h2 a:hover {
-  color: #34c53c;
-}
-/* line 52, ../sass/_scaffolding.scss */
-.site-header hgroup h1 {
-  font-size: 24px;
-  font-size: 1.71429rem;
-  line-height: 2;
-}
-@media screen and (min-width: 600px) {
-  /* line 52, ../sass/_scaffolding.scss */
-  .site-header hgroup h1 {
-    font-size: 26px;
-    font-size: 1.85714rem;
-    line-height: 1.84615;
-  }
-}
-/* line 60, ../sass/_scaffolding.scss */
-.site-header hgroup h2 {
-  font-weight: normal;
-  font-size: 16px;
-  font-size: 1.14286rem;
-  line-height: 1.5;
-  color: navy;
-  display: inline;
-}
-/* line 68, ../sass/_scaffolding.scss */
-.site-header hgroup .green {
-  color: #34c53c;
-  display: inline;
-  vertical-align: super;
-}
+/* line 31, ../sass/_scaffolding.scss */
+.site-header { padding: 24px 0; padding:  1.71429rem 0; }
+/* line 35, ../sass/_scaffolding.scss */
+.site-header hgroup h1, .site-header hgroup h2 { text-align: center; clear: none; }
+@media screen and (min-width: 600px) { /* line 35, ../sass/_scaffolding.scss */
+  .site-header hgroup h1, .site-header hgroup h2 { text-align: left; } }
+/* line 42, ../sass/_scaffolding.scss */
+.site-header hgroup h1 a, .site-header hgroup h2 a { color: navy; display: block; text-decoration: none; font-size: 52px; font-weight: 300; }
+/* line 48, ../sass/_scaffolding.scss */
+.site-header hgroup h1 a:hover, .site-header hgroup h2 a:hover { color: #34c53c; }
+/* line 53, ../sass/_scaffolding.scss */
+.site-header hgroup h1 { font-size: 24px; font-size: 1.71429rem; line-height: 2; }
+@media screen and (min-width: 600px) { /* line 53, ../sass/_scaffolding.scss */
+  .site-header hgroup h1 { font-size: 26px; font-size: 1.85714rem; line-height: 1.84615; } }
+/* line 61, ../sass/_scaffolding.scss */
+.site-header hgroup h2 { font-weight: normal; font-size: 16px; font-size: 1.14286rem; line-height: 1.5; color: navy; display: inline; }
+/* line 69, ../sass/_scaffolding.scss */
+.site-header hgroup .green { color: #34c53c; display: inline; vertical-align: super; }
 
-/* line 75, ../sass/_scaffolding.scss */
-.header-image {
-  margin-top: 24px;
-  margin-top: 1.71429rem;
-  float: right;
-  display: inline;
-}
+/* line 76, ../sass/_scaffolding.scss */
+.header-image { margin-top: 24px; margin-top: 1.71429rem; float: right; display: inline; }
 
 /*---------------------------------------------------------
 	Navigation Menu
 ------------------------------------------------------------ */
-/* line 84, ../sass/_scaffolding.scss */
-nav.main-navigation {
-  border: 0;
-  margin: 0;
-}
-/* line 88, ../sass/_scaffolding.scss */
-nav.main-navigation ul.nav-menu {
-  text-align: right;
-  border-top: 0;
-  border-bottom: 1px solid navy;
-}
-/* line 94, ../sass/_scaffolding.scss */
-nav.main-navigation li a {
-  color: navy;
-}
-/* line 96, ../sass/_scaffolding.scss */
-nav.main-navigation li a:hover {
-  color: #34c53c;
-}
-/* line 101, ../sass/_scaffolding.scss */
-nav.main-navigation li {
-  margin-left: 40px;
-  margin-left: 2.85714rem;
-  margin-right: 0px;
-  margin-right: 0rem;
-  position: relative;
-}
-/* line 109, ../sass/_scaffolding.scss */
-nav.main-navigation li ul li {
-  margin-left: 0px;
-  margin-left: 0rem;
-  margin-right: 40px;
-  margin-right: 2.85714rem;
-  text-align: left;
-}
-/* line 114, ../sass/_scaffolding.scss */
-nav.main-navigation li ul li a:hover {
-  background: #e3e3e3;
-  color: #34c53c;
-}
-/* line 121, ../sass/_scaffolding.scss */
-nav.main-navigation .current-menu-item > a,
-nav.main-navigation .current-menu-ancestor > a,
-nav.main-navigation .current_page_item > a,
-nav.main-navigation .current_page_ancestor > a {
-  color: #45ce4c;
-  font-weight: bold;
-}
+/* line 85, ../sass/_scaffolding.scss */
+nav.main-navigation { border: 0; margin: 0; }
+/* line 89, ../sass/_scaffolding.scss */
+nav.main-navigation ul.nav-menu { text-align: right; border-top: 0; border-bottom: 1px solid navy; }
+/* line 95, ../sass/_scaffolding.scss */
+nav.main-navigation li a { color: navy; }
+/* line 97, ../sass/_scaffolding.scss */
+nav.main-navigation li a:hover { color: #34c53c; }
+/* line 102, ../sass/_scaffolding.scss */
+nav.main-navigation li { margin-left: 40px; margin-left: 2.85714rem; margin-right: 0px; margin-right: 0rem; position: relative; }
+/* line 110, ../sass/_scaffolding.scss */
+nav.main-navigation li ul li { margin-left: 0px; margin-left: 0rem; margin-right: 40px; margin-right: 2.85714rem; text-align: left; }
+/* line 115, ../sass/_scaffolding.scss */
+nav.main-navigation li ul li a:hover { background: #e3e3e3; color: #34c53c; }
+/* line 122, ../sass/_scaffolding.scss */
+nav.main-navigation .current-menu-item > a, nav.main-navigation .current-menu-ancestor > a, nav.main-navigation .current_page_item > a, nav.main-navigation .current_page_ancestor > a { color: #45ce4c; font-weight: bold; }
 
-/* line 128, ../sass/_scaffolding.scss */
-nav[role="navigation"].main-small-navigation a {
-  text-align: center;
-  color: #5e5e5e;
-}
-/* line 131, ../sass/_scaffolding.scss */
-nav[role="navigation"].main-small-navigation a:hover {
-  color: navy;
-}
+/* line 129, ../sass/_scaffolding.scss */
+nav[role="navigation"].main-small-navigation a { text-align: center; color: #5e5e5e; }
+/* line 132, ../sass/_scaffolding.scss */
+nav[role="navigation"].main-small-navigation a:hover { color: navy; }
 
 /*---------------------------------------------------------
 	Banner
 ------------------------------------------------------------ */
-/* line 140, ../sass/_scaffolding.scss */
-section[role="banner"] {
-  margin-bottom: 48px;
-  margin-bottom: 3.42857rem;
-}
+/* line 141, ../sass/_scaffolding.scss */
+section[role="banner"] { margin-bottom: 48px; margin-bottom: 3.42857rem; }
 
 /*---------------------------------------------------------
 	Sidebar
 ------------------------------------------------------------ */
-/* line 147, ../sass/_scaffolding.scss */
-#secondary aside a {
-  color: #777777;
-}
-/* line 149, ../sass/_scaffolding.scss */
-#secondary aside a:hover {
-  color: navy;
-}
+/* line 148, ../sass/_scaffolding.scss */
+#secondary aside a { color: #777777; }
+/* line 150, ../sass/_scaffolding.scss */
+#secondary aside a:hover { color: navy; }
 
 /*---------------------------------------------------------
 	Footer
 ------------------------------------------------------------ */
-/* line 157, ../sass/_scaffolding.scss */
-footer[role="contentinfo"] {
-  border-top: 1px solid navy;
-}
-/* line 159, ../sass/_scaffolding.scss */
-footer[role="contentinfo"] a {
-  color: #686868;
-}
-/* line 161, ../sass/_scaffolding.scss */
-footer[role="contentinfo"] a:hover {
-  color: navy;
-}
+/* line 158, ../sass/_scaffolding.scss */
+footer[role="contentinfo"] { border-top: 1px solid navy; }
+/* line 160, ../sass/_scaffolding.scss */
+footer[role="contentinfo"] a { color: #686868; }
+/* line 162, ../sass/_scaffolding.scss */
+footer[role="contentinfo"] a:hover { color: navy; }
 
-/*
- * Basic post styling
- * ----------------------------------------------------------------- */
-/*---------------------------------------------------------
-	Basic post styling
------------------------------------------------------------- */
-/* line 10, ../sass/_view-index.scss */
-.comments-link a,
-.entry-meta a {
-  color: #777777;
-}
-/* line 12, ../sass/_view-index.scss */
-.comments-link a:hover,
-.entry-meta a:hover {
-  color: navy;
-}
+/* Basic post styling ----------------------------------------------------------------- */
+/* line 7, ../sass/_view-index.scss */
+.comments-link a, .entry-meta a { color: #777777; }
+/* line 9, ../sass/_view-index.scss */
+.comments-link a:hover, .entry-meta a:hover { color: navy; }
 
+/* line 16, ../sass/_view-index.scss */
+.entry-content a:visited { color: #000067; }
 /* line 19, ../sass/_view-index.scss */
-.entry-content a:visited {
-  color: #000067;
-}
-/* line 22, ../sass/_view-index.scss */
-.entry-content a:hover {
-  color: #34c53c;
-}
+.entry-content a:hover { color: #34c53c; }
