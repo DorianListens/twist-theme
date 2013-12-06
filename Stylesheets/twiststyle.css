@@ -21,7 +21,7 @@ body { background-color: #eeeeee; }
 .site-header { padding: 24px 0; padding:  1.71429rem 0; }
 .site-header hgroup h1, .site-header hgroup h2 { text-align: center; clear: none; }
 @media screen and (min-width: 600px) { .site-header hgroup h1, .site-header hgroup h2 { text-align: left; } }
-.site-header hgroup h1 a, .site-header hgroup h2 a { color: navy; display: block; text-decoration: none; font-size: 52px; font-weight: 300; }
+.site-header hgroup h1 a, .site-header hgroup h2 a { color: navy; display: block; text-decoration: none; font-size: 52px; font-weight: 100; }
 .site-header hgroup h1 a:hover, .site-header hgroup h2 a:hover { color: #34c53c; }
 .site-header hgroup h1 { font-size: 24px; font-size: 1.71429rem; line-height: 2; }
 @media screen and (min-width: 600px) { .site-header hgroup h1 { font-size: 26px; font-size: 1.85714rem; line-height: 1.84615; } }
@@ -71,3 +71,6 @@ footer[role="contentinfo"] a:hover { color: navy; }
 .entry-content a:hover { color: #34c53c; }
 
 #content article { padding-bottom: 24px; padding-bottom: 1.71429rem; margin-bottom: 25px; margin-bottom: 1.78571rem; border-bottom: 1px solid #ededed; }
+
+.entry-header .entry-cat { margin-top: 20px; }
+.entry-header .entry-cat ul, .entry-header .entry-cat li { clear: none; display: inline; }

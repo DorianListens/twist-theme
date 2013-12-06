@@ -25,6 +25,9 @@
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 			<?php endif; // is_single() ?>
+		<?php if ( is_tag() or is_single() ): ?>
+			<div class="entry-cat">From: <em><?php the_category(); ?> </em> </div>
+		<?php endif; //is tag ?>
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -40,6 +43,7 @@
 
 		<footer class="entry-meta">
 			<?php // twentytwelve_entry_meta(); ?>
+			<?php if ( is_category() or is_single() ): the_tags(); endif;?>
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
 			
 		</footer><!-- .entry-meta -->
