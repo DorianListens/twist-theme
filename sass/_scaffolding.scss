@@ -74,7 +74,11 @@ body {
 }
 .header-image {
 	@include rem('margin-top', $vbase);
-	float: right;
+	margin: 0 auto;
+	@media screen and (min-width: 600px) {
+				float: right;
+
+			}
 	display: inline;
 }
 
@@ -161,5 +165,27 @@ footer[role="contentinfo"] {
 		&:hover {
 			color: $link-color;
 		}
+	}
+	.site-info {
+	 p {
+	 display: inline;
+	 }
+	
+	}
+	.twist-tag {
+		float: right;
+		h2 {
+			font-weight: normal;
+			@include rem('font-size', 12px );
+			line-height: ($evbase/12);
+			color: $link-color;
+			display: inline;
+
+		}
+		.green {
+				color: $link-color-hover;
+				display: inline;
+				vertical-align: super;
+				}
 	}
 }

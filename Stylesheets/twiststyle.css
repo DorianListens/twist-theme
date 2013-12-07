@@ -28,7 +28,8 @@ body { background-color: #eeeeee; }
 .site-header hgroup h2 { font-weight: normal; font-size: 16px; font-size: 1.14286rem; line-height: 1.5; color: navy; display: inline; }
 .site-header hgroup .green { color: #34c53c; display: inline; vertical-align: super; }
 
-.header-image { margin-top: 24px; margin-top: 1.71429rem; float: right; display: inline; }
+.header-image { margin-top: 24px; margin-top: 1.71429rem; margin: 0 auto; display: inline; }
+@media screen and (min-width: 600px) { .header-image { float: right; } }
 
 /*---------------------------------------------------------
 	Navigation Menu
@@ -62,6 +63,10 @@ section[role="banner"] { margin-bottom: 48px; margin-bottom: 3.42857rem; }
 footer[role="contentinfo"] { border-top: 1px solid navy; }
 footer[role="contentinfo"] a { color: #686868; }
 footer[role="contentinfo"] a:hover { color: navy; }
+footer[role="contentinfo"] .site-info p { display: inline; }
+footer[role="contentinfo"] .twist-tag { float: right; }
+footer[role="contentinfo"] .twist-tag h2 { font-weight: normal; font-size: 12px; font-size: 0.85714rem; line-height: 2; color: navy; display: inline; }
+footer[role="contentinfo"] .twist-tag .green { color: #34c53c; display: inline; vertical-align: super; }
 
 /* Basic post styling ----------------------------------------------------------------- */
 .comments-link a, .entry-meta a { color: #777777; }
@@ -69,8 +74,11 @@ footer[role="contentinfo"] a:hover { color: navy; }
 
 .entry-content a:visited { color: #000067; }
 .entry-content a:hover { color: #34c53c; }
+.entry-content .c-link { text-align: center; font-size: 16px; font-size: 1.14286rem; margin-bottom: 20px; margin-bottom: 1.42857rem; margin-top: 20px; margin-top: 1.42857rem; }
 
-#content article { padding-bottom: 24px; padding-bottom: 1.71429rem; margin-bottom: 25px; margin-bottom: 1.78571rem; border-bottom: 1px solid #ededed; }
+#content article { padding-bottom: 24px; padding-bottom: 1.71429rem; margin-bottom: 20px; margin-bottom: 1.42857rem; border-bottom: 1px solid #ededed; }
 
 .entry-header .entry-cat { margin-top: 20px; }
 .entry-header .entry-cat ul, .entry-header .entry-cat li { clear: none; display: inline; }
+.entry-header .fp-entry-title { font-size: 16px; font-size: 1.14286rem; line-height: 1.6; font-weight: normal; }
+.entry-header .fp-entry-title a { text-decoration: none; }

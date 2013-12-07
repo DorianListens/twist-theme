@@ -1,0 +1,25 @@
+<!-- <div class="entry-content"><h2>Recent Work:</h2></div>
+			<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<header class="entry-header">
+			<h3 class="fp-entry-title">
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+			</h3>
+
+			<div class="entry-cat">From: <em><?php the_category(); ?> </em> </div>
+		</header><!-- .entry-header -->
+		<!-- <div class="entry-content">
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+		</div><!-- .entry-content -->
+
+		<!-- <footer class="entry-meta">
+			<?php // twentytwelve_entry_meta(); ?>
+			<?php the_tags();?>
+			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
+			
+		</footer><!-- .entry-meta -->
+	<!-- </article><!-- #post -->
+			<?php // endwhile;?>
