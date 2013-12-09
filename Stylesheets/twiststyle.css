@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 /* Main Stylesheet for Twist Theme */
 .clear { zoom: 1; }
 .clear:before, .clear:after { display: table; content: ""; }
@@ -19,11 +20,13 @@ body { background-color: #eeeeee; }
 	Header
 ------------------------------------------------------------ */
 .site-header { padding: 24px 0; padding:  1.71429rem 0; }
+.site-header hgroup { text-align: center; clear: none; }
+@media screen and (min-width: 600px) { .site-header hgroup { text-align: left; } }
 .site-header hgroup h1, .site-header hgroup h2 { text-align: center; clear: none; }
 @media screen and (min-width: 600px) { .site-header hgroup h1, .site-header hgroup h2 { text-align: left; } }
 .site-header hgroup h1 a, .site-header hgroup h2 a { color: navy; display: block; text-decoration: none; font-size: 52px; font-weight: 100; }
 .site-header hgroup h1 a:hover, .site-header hgroup h2 a:hover { color: #34c53c; }
-.site-header hgroup h1 { font-size: 24px; font-size: 1.71429rem; line-height: 2; }
+.site-header hgroup h1 { font-family: 'Playfair Display', serif; font-size: 24px; font-size: 1.71429rem; line-height: 2; }
 @media screen and (min-width: 600px) { .site-header hgroup h1 { font-size: 26px; font-size: 1.85714rem; line-height: 1.84615; } }
 .site-header hgroup h2 { font-weight: normal; font-size: 16px; font-size: 1.14286rem; line-height: 1.5; color: navy; display: inline; }
 .site-header hgroup .green { color: #34c53c; display: inline; vertical-align: super; }
@@ -35,11 +38,14 @@ body { background-color: #eeeeee; }
 	Navigation Menu
 ------------------------------------------------------------ */
 nav.main-navigation { border: 0; margin: 0; }
-nav.main-navigation ul.nav-menu { text-align: right; border-top: 0; border-bottom: 1px solid navy; }
+nav.main-navigation ul.nav-menu { text-algin: center; border-top: 0; border-bottom: 1px solid navy; }
+@media screen and (min-width: 600px) { nav.main-navigation ul.nav-menu { text-align: right; } }
 nav.main-navigation li a { color: navy; }
 nav.main-navigation li a:hover { color: #34c53c; }
-nav.main-navigation li { margin-left: 40px; margin-left: 2.85714rem; margin-right: 0px; margin-right: 0rem; position: relative; }
-nav.main-navigation li ul li { margin-left: 0px; margin-left: 0rem; margin-right: 40px; margin-right: 2.85714rem; text-align: left; }
+nav.main-navigation li { margin-left: 0px; margin-left: 0rem; margin-right: 0px; margin-right: 0rem; position: relative; }
+@media screen and (min-width: 600px) { nav.main-navigation li { margin-left: 40px; margin-left: 2.85714rem; } }
+nav.main-navigation li ul li { text-align: center; margin-right: 0px; margin-right: 0rem; }
+@media screen and (min-width: 600px) { nav.main-navigation li ul li { margin-left: 0px; margin-left: 0rem; margin-right: 40px; margin-right: 2.85714rem; text-align: left; } }
 nav.main-navigation li ul li a:hover { background: #e3e3e3; color: #34c53c; }
 nav.main-navigation .current-menu-item > a, nav.main-navigation .current-menu-ancestor > a, nav.main-navigation .current_page_item > a, nav.main-navigation .current_page_ancestor > a { color: #45ce4c; font-weight: bold; }
 

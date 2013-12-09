@@ -27,16 +27,22 @@ body {
 /*---------------------------------------------------------
 	Header
 ------------------------------------------------------------ */
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 .site-header {
 	@include rem('padding', $vbase 0);
 	hgroup {
+		text-align: center;
+			clear: none;
+			@media screen and (min-width: 600px) {
+				text-align: left;
+			}
+
 		h1,
 		h2 {
 			text-align: center;
 			clear: none;
 			@media screen and (min-width: 600px) {
 				text-align: left;
-
 			}
 			a {
 				color: $link-color;
@@ -50,6 +56,7 @@ body {
 			}
 		}
 		h1 {
+			font-family: 'Playfair Display', serif;
 			@include rem('font-size', $vbase);
 			line-height: ($evbase2/24);
 			@media screen and (min-width: 600px) {
@@ -90,7 +97,10 @@ nav.main-navigation {
 	margin: 0;
 
 	ul.nav-menu {
+	text-algin: center;
+	@media screen and (min-width: 600px) {
 	text-align: right;
+	}
 	border-top: 0; // $divider;
 	border-bottom: $divider;
 	}
@@ -103,17 +113,23 @@ nav.main-navigation {
 	}
 
 	li {
-		@include rem('margin-left', 40px);
+	@include rem('margin-left', 0px);
 		@include rem('margin-right', 0px);
 		position: relative;
+		@media screen and (min-width: 600px) {
+		@include rem('margin-left', 40px);
+			}
 		}
-
 // Submenu
 
 	li ul li {
+	text-align: center;
+	@include rem('margin-right', 0px);
+		@media screen and (min-width: 600px){
 	@include rem('margin-left', 0px);
 	@include rem('margin-right', 40px);
 	text-align: left;
+		}
 	}
 	li ul li a:hover {
 		background: #e3e3e3;
