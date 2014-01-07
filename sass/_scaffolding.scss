@@ -186,6 +186,7 @@ section[role="banner"] {
 ------------------------------------------------------------ */
 footer[role="contentinfo"] {
 	border-top: $divider;
+	margin-bottom: 40px;
 	a {
 		color: lighten($font-color, 14);
 		&:hover {
@@ -193,17 +194,18 @@ footer[role="contentinfo"] {
 		}
 	}
 	.site-info {
+	float: right;
 	 p {
 	 display: inline;
 	 }
 	
 	}
 	.twist-tag {
-		float: right;
+		float: left;
 		h2 {
 			font-weight: normal;
-			@include rem('font-size', 12px );
-			line-height: ($evbase/12);
+			@include rem('font-size', 18px );
+			line-height: ($evbase/18);
 			color: $link-color;
 			display: inline;
 
