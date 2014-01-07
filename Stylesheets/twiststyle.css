@@ -37,7 +37,8 @@ body {
   padding:  1.71429rem 0; }
   .site-header hgroup {
     text-align: center;
-    clear: none; }
+    clear: none;
+    line-height: 1; }
     @media screen and (min-width: 600px) {
       .site-header hgroup {
         text-align: left; } }
@@ -63,7 +64,7 @@ body {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
       font-size: 1.71429rem;
-      line-height: 2; }
+      line-height: 1; }
       @media screen and (min-width: 600px) {
         .site-header hgroup h1 {
           font-size: 26px;
