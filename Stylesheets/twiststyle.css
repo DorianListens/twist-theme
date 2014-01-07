@@ -218,12 +218,15 @@ footer[role="contentinfo"] {
   margin-bottom: 1.42857rem;
   margin-top: 20px;
   margin-top: 1.42857rem; }
+.entry-content blockquote {
+  font-size: 120%;
+  padding: 0; }
 
 #content article {
   padding-bottom: 12px;
   padding-bottom: 0.85714rem;
-  margin-bottom: 20px;
-  margin-bottom: 1.42857rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.85714rem;
   border-bottom: 1px solid #ededed; }
 
 .entry-header .entry-cat {
@@ -238,3 +241,6 @@ footer[role="contentinfo"] {
   font-weight: normal; }
   .entry-header .fp-entry-title a {
     text-decoration: none; }
+.entry-header .entry-title {
+  font-size: 16px;
+  font-size: 1.14286rem; }
