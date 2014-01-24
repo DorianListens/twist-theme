@@ -15,12 +15,14 @@
  Body, links, basics
 ------------------------------------------------------------ */
 html {
-  font-size: 87.5%; }
+  /* font-size: 87.5%; */ }
 
 a {
-  color: navy; }
+  color: navy;
+  text-decoration: none; }
   a:hover {
-    color: #34c53c; }
+    color: #34c53c;
+    text-decoration: underline; }
 
 body .site {
   margin-top: 0;
@@ -33,8 +35,8 @@ body {
 	Header
 ------------------------------------------------------------ */
 .site-header {
-  padding: 12px 0;
-  padding:  0.85714rem 0; }
+  padding: 14px 0;
+  padding:  1rem 0; }
   .site-header hgroup {
     text-align: center;
     clear: none;
@@ -62,8 +64,8 @@ body {
           color: #34c53c; }
     .site-header hgroup h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 12px;
-      font-size: 0.85714rem;
+      font-size: 14px;
+      font-size: 1rem;
       line-height: 1; }
       @media screen and (min-width: 600px) {
         .site-header hgroup h1 {
@@ -83,8 +85,8 @@ body {
       vertical-align: super; }
 
 .header-image {
-  margin-top: 12px;
-  margin-top: 0.85714rem;
+  margin-top: 14px;
+  margin-top: 1rem;
   margin: 0 auto 0 auto;
   width: 100%;
   display: inline; }
@@ -92,6 +94,9 @@ body {
     .header-image {
       float: right;
       width: auto; } }
+
+.entry-header {
+  margin-bottom: 14px; }
 
 /*---------------------------------------------------------
 	Navigation Menu
@@ -157,8 +162,8 @@ nav[role="navigation"].main-small-navigation a {
 	Banner
 ------------------------------------------------------------ */
 section[role="banner"] {
-  margin-bottom: 48px;
-  margin-bottom: 3.42857rem; }
+  margin-bottom: 28px;
+  margin-bottom: 2rem; }
 
 /*---------------------------------------------------------
 	Sidebar
@@ -210,6 +215,10 @@ footer[role="contentinfo"] {
   color: #000067; }
 .entry-content a:hover {
   color: #34c53c; }
+.entry-content p {
+  margin: 0 0 14px 0;
+  margin:  0 0 1rem 0;
+  line-height: 1.71429; }
 .entry-content .c-link {
   text-align: center;
   font-size: 16px;
@@ -223,10 +232,10 @@ footer[role="contentinfo"] {
   padding: 0; }
 
 #content article {
-  padding-bottom: 12px;
-  padding-bottom: 0.85714rem;
-  margin-bottom: 12px;
-  margin-bottom: 0.85714rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.35714rem;
+  margin-bottom: 14px;
+  margin-bottom: 1rem;
   border-bottom: 1px solid #ededed; }
 
 .entry-header .entry-cat {
@@ -244,3 +253,6 @@ footer[role="contentinfo"] {
 .entry-header .entry-title {
   font-size: 16px;
   font-size: 1.14286rem; }
+
+.tagcloud {
+  text-align: center; }

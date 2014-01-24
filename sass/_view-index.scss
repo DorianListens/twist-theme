@@ -20,6 +20,11 @@
 		color: $link-color-hover;
 		}
 	}
+	p {
+		@include rem('margin', 0 0 $vbase 0);
+		line-height: $lheight;
+	}
+
 	.c-link {
 		text-align: center;
 		@include rem('font-size', 16px);
@@ -29,10 +34,11 @@
 	blockquote {
 	font-size: 120%;
 	padding: 0;
+	
 	}
 }
 #content article {
-	@include rem('padding-bottom', $vbase );
+	@include rem('padding-bottom', 5px );
 	@include rem('margin-bottom', $vbase );
 	border-bottom: 1px solid #ededed; 
 }
@@ -58,5 +64,10 @@
 	.entry-title {
 	@include rem('font-size', 16px);
 	}
+}
+
+//Widgets
+.tagcloud {
+	text-align: center;
 }
 
