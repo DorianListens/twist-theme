@@ -219,14 +219,6 @@ footer[role="contentinfo"] {
   margin: 0 0 14px 0;
   margin:  0 0 1rem 0;
   line-height: 1.71429; }
-.entry-content .c-link {
-  text-align: center;
-  font-size: 16px;
-  font-size: 1.14286rem;
-  margin-bottom: 20px;
-  margin-bottom: 1.42857rem;
-  margin-top: 20px;
-  margin-top: 1.42857rem; }
 .entry-content blockquote {
   font-size: 120%;
   padding: 0; }
@@ -256,3 +248,11 @@ footer[role="contentinfo"] {
 
 .tagcloud {
   text-align: center; }
+
+.widget-title {
+  font-size: 100%; }
+
+#secondary aside a {
+  color: navy; }
+  #secondary aside a:hover {
+    color: #34c53c; }
