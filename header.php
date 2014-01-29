@@ -40,8 +40,9 @@
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
 		<hgroup>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<!-- <h2 class="site-description"><!--<?php bloginfo( 'description' ); ?>Creative <div class="green">Investment</div> Solutions</h2> -->
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/twist-logo.jpg" class="logo" /></a>
+			<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			 <h2 class="site-description"><!--<?php bloginfo( 'description' ); ?>Creative <div class="green">Investment</div> Solutions</h2> -->
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
