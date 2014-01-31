@@ -4,11 +4,23 @@
 
 // Links
 $link-color:           #280064;//#000080;
-$link-color-hover:     #64780A;//34c53c;
+$link-color-hover:     				#64780A;//34c53c;
 
 // Fonts
+@font-face
+{
+font-family: "futura-md";
+src: url(../fonts/3997.woff);
+}
+@font-face {
+	font-family: "futura-md";
+	src: url(../fonts/3991.woff);
+	font-weight: bold;
+}
+
 $font-color:           #444;
-$font-stack:           'Open Sans', Helvetica, Arial, sans-serif;
+$font-stack:           futura-md, Helvetica, Arial, sans-serif;
+
 
 //Column widths
 $width-max:            960;
@@ -17,12 +29,12 @@ $width-max:            960;
 $breakpoint:           600;
 
 //Baselines
-$fsize:                14px;
+$fsize:                16px;
 $vbase:                14px;
 $vbase2:               28px;
 $evbase:               24;
 $evbase2:              48;
-$lheight:              (24/14);
+$lheight:              (20/14);
 $lheight2:             (48/14);
 
 //Border

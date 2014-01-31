@@ -5,13 +5,8 @@
 /*---------------------------------------------------------
  Body, links, basics
 ------------------------------------------------------------ */
-html {
-	/* font-size: 87.5%; */
-}
-
 a {
 	color: $link-color;
-	text-decoration: none;
 	&:hover {
 		color: $link-color-hover;
 		text-decoration: underline;
@@ -24,6 +19,10 @@ body .site {
 }
 body {
 	background-color: #eeeeee;
+	font-family: $font-stack!important;
+	@include rem('font-size', $fsize);
+	text-rendering: optimizeLegibility;
+	color: $font-color;
 }
 
 /*---------------------------------------------------------
@@ -32,6 +31,7 @@ body {
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 .site-header {
 //	border-bottom: $divider;
+padding: 10px 0!important;
 
 	@include rem('padding', $vbase 0);
 	hgroup {
@@ -61,28 +61,6 @@ body {
 				}
 			}
 		}
-		h1 {
-			font-family: 'Playfair Display', serif;
-			@include rem('font-size', $vbase);
-			line-height: 1;
-			@media screen and (min-width: 600px) {
-				@include rem('font-size', 26px );
-				line-height: ($evbase2/26);
-			}
-		}
-		h2 {
-			font-weight: normal;
-			@include rem('font-size', 16px );
-			line-height: ($evbase/16);
-			color: $link-color;
-			display: inline;
-
-		}
-		.green {
-				color: $link-color-hover;
-				display: inline;
-				vertical-align: super;
-				}
 	}
 }
 .header-image {
@@ -96,6 +74,31 @@ body {
 			}
 	display: inline;
 }
+.header-image-box {
+	display: block;
+}
+	.twist-tag-header {
+		float: right;
+		clear: both;
+		display: block;
+		h2 {
+			text-align: center;
+			margin: auto;
+			font-family: futura-md;
+			text-transform: uppercase;
+			font-weight: normal;
+			@include rem('font-size', 18px );
+			line-height: ($evbase/18);
+			color: $link-color-hover;
+			display: inline-block;
+			.green {
+				color: $link-color;
+				}
+
+		}
+		
+	}
+
 //article heading
 .entry-header {
 	margin-bottom: $vbase;
@@ -182,13 +185,14 @@ nav[role="navigation"].main-small-navigation {
 	}
 }
 
+/*
+Content
+*/
 
-/*---------------------------------------------------------
-	Banner
------------------------------------------------------------- */
-section[role="banner"] {
-	@include rem('margin-bottom', $vbase2);
+#primary {
+	margin-top: 14px!important;
 }
+
 /*---------------------------------------------------------
 	Sidebar
 ------------------------------------------------------------ */
@@ -199,6 +203,12 @@ section[role="banner"] {
 			color: $link-color;
 		}
 	}
+	h3 {
+		margin-bottom: 10px;
+	}
+}
+.widet-area p > a{
+	font-size: 100%!important;
 }
 /*---------------------------------------------------------
 	Footer
@@ -219,20 +229,24 @@ footer[role="contentinfo"] {
 	 }
 	
 	}
-	.twist-tag {
+}
+
+.twist-tag {
 		float: left;
 		h2 {
+			font-family: futura-md;
+			text-transform: uppercase;
 			font-weight: normal;
 			@include rem('font-size', 18px );
 			line-height: ($evbase/18);
-			color: $link-color;
+			color: $link-color-hover;
 			display: inline;
 
 		}
 		.green {
-				color: $link-color-hover;
+				color: $link-color;
 				display: inline;
 				vertical-align: super;
 				}
 	}
-}
+

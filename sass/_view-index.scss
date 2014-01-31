@@ -28,6 +28,7 @@
 	blockquote {
 	font-size: 120%;
 	padding: 0;
+	font-style: normal;
 	
 	}
 }
@@ -40,7 +41,6 @@
 .entry-header {
 	.entry-cat {
 	margin-top: 20px;
-	
 
 	ul, li {
 		clear: none;
@@ -57,12 +57,23 @@
 		}
 	.entry-title {
 	@include rem('font-size', 16px);
+	font-weight: bold;
 	}
 }
 
+footer.entry-meta {
+	margin-top: 10px;
+		.entry-cat {
+
+	ul, li {
+		clear: none;
+		display: inline;
+	}
+	}
+}
 //Widgets
 .tagcloud {
-	text-align: center;
+	// text-align: center;
 }
 .widget-title {
 	font-size: 100%;
@@ -72,5 +83,20 @@
 	&:hover {
 		color: $link-color-hover;
 	}
+}
+
+//TWIST FINANCIAL
+.twistname {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $link-color;
+	.financial {
+		color: $link-color-hover;
+	}
+}
+
+blockquote > p > strong {
+	font-style: normal;
+	color: $link-color-hover;
 }
 
