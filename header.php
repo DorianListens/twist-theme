@@ -15,6 +15,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/twisticon.ico">
+<?php include_once('analyticstracking.php'); ?>
 <?php wp_head(); ?>
 </head>
 

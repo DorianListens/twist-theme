@@ -12,7 +12,7 @@
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
-			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | Site developed by <a href="http://dorianlistens.com" target="_blank">Dorian Listens</a></p>
 		</div><!-- .site-info -->
 		<div class="twist-tag">
 		<h2 class="site-description">Creative <div class="green">Investment</div> Solutions</h2>
