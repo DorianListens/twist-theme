@@ -28,7 +28,7 @@ $link = $post_val[0];
 $link = $perm;
 }
 }
-echo '<h1 class="entry-title"><a href="'.$link.'" rel="bookmark" title="'.$title.'">'.$title.'</a></h1>';
+echo '<h3 class="entry-title"><a href="'.$link.'" rel="bookmark" title="'.$title.'">'.$title.'</a></h3>';
 }
 
 function print_article_link() {

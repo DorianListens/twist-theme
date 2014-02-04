@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<header class="entry-header">
-				<h1 class="entry-title"><?php single_cat_title(); ?></h1>
+				<h1 class="page-title"><?php single_cat_title(); ?></h1>
 
 			<?php if ( category_description() ) : // Show an optional category description ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>

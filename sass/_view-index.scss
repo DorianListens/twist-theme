@@ -48,7 +48,7 @@
 	}
 	}
 	.fp-entry-title {
-		@include rem('font-size', 16px);
+		@include rem('font-size', 20px);
 		line-height: ($evbase/15);
 		font-weight: normal;
 		a {
@@ -56,7 +56,7 @@
 		}
 		}
 	.entry-title {
-	@include rem('font-size', 16px);
+	@include rem('font-size', 20px);
 	font-weight: bold;
 	}
 }
@@ -89,9 +89,9 @@ footer.entry-meta {
 .twistname {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: $link-color;
+	color: $link-color-hover;
 	.financial {
-		color: $link-color-hover;
+		color: $link-color;
 	}
 }
 

@@ -28,7 +28,7 @@ body {
 /*---------------------------------------------------------
 	Header
 ------------------------------------------------------------ */
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+//@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 .site-header {
 //	border-bottom: $divider;
 padding: 10px 0!important;
@@ -112,6 +112,12 @@ padding: 10px 0!important;
 		width: auto;
 		max-width: 50%;
 	}
+}
+
+.page-title {
+	color: $link-color-hover;
+	@include rem('font-size', 20px);
+	font-weight: bold;
 }
 
 /*---------------------------------------------------------
@@ -205,6 +211,9 @@ Content
 	}
 	h3 {
 		margin-bottom: 10px;
+		color: $link-color-hover;
+		text-transform: uppercase;
+		@include rem('font-size', 20px);
 	}
 }
 .widet-area p > a{
