@@ -81,6 +81,10 @@ body {
   display: inline; }
   @media screen and (min-width: 700px) {
     .header-image {
+      max-width: 50%;
+      float: right; } }
+  @media screen and (min-width: 860px) {
+    .header-image {
       float: right;
       width: auto; } }
 
@@ -101,7 +105,11 @@ body {
     font-size: 1.28571rem;
     line-height: 1.33333;
     color: #64780a;
-    display: inline-block; }
+    display: block;
+    clear: left; }
+    @media screen and (min-width: 700px) {
+      .twist-tag-header h2 {
+        display: inline-block; } }
     .twist-tag-header h2 .green {
       color: #280064; }
 
@@ -183,6 +191,14 @@ nav[role="navigation"].main-small-navigation a {
   color: #5e5e5e; }
   nav[role="navigation"].main-small-navigation a:hover {
     color: #280064; }
+
+.menu-toggle {
+  display: block;
+  padding: 4px 10px;
+  padding:  0.28571rem 0.71429rem; }
+  @media screen and (min-width: 600px) {
+    .menu-toggle {
+      display: none; } }
 
 /*
 Content
