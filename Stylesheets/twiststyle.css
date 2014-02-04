@@ -33,7 +33,7 @@ body .site {
   margin-bottom: 0; }
 
 body {
-  background-color: #eeeeee;
+  background-color: #eee;
   font-family: futura-md, Helvetica, Arial, sans-serif !important;
   font-size: 16px;
   font-size: 1.14286rem;
@@ -81,12 +81,9 @@ body {
   display: inline; }
   @media screen and (min-width: 700px) {
     .header-image {
-      max-width: 50%;
+      max-width: 48% !important;
+      width: auto;
       float: right; } }
-  @media screen and (min-width: 860px) {
-    .header-image {
-      float: right;
-      width: auto; } }
 
 .header-image-box {
   display: block; }
@@ -101,15 +98,17 @@ body {
     font-family: futura-md;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 18px;
-    font-size: 1.28571rem;
+    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.33333;
     color: #64780a;
     display: block;
     clear: left; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 800px) {
       .twist-tag-header h2 {
-        display: inline-block; } }
+        display: inline-block;
+        font-size: 18px;
+        font-size: 1.28571rem; } }
     .twist-tag-header h2 .green {
       color: #280064; }
 
@@ -124,7 +123,7 @@ body {
       display: inline;
       float: left;
       width: auto;
-      max-width: 50%; } }
+      max-width: 48%; } }
 
 .page-title {
   color: #64780a;
@@ -138,12 +137,12 @@ body {
 nav.main-navigation {
   border: 0;
   margin: 0;
-  text-algin: center; }
+  text-align: center; }
   @media screen and (min-width: 600px) {
     nav.main-navigation {
       text-align: left; } }
   nav.main-navigation ul.nav-menu {
-    text-algin: center;
+    text-align: center;
     border-top: 0;
     border-bottom: 1px solid navy; }
     @media screen and (min-width: 600px) {
@@ -233,26 +232,39 @@ footer[role="contentinfo"] {
     color: #686868; }
     footer[role="contentinfo"] a:hover {
       color: #280064; }
-  footer[role="contentinfo"] .site-info {
-    float: right; }
-    footer[role="contentinfo"] .site-info p {
-      display: inline; }
+  footer[role="contentinfo"] .site-info > p {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    font-size: 0.78571rem; }
+    @media screen and (min-width: 700px) {
+      footer[role="contentinfo"] .site-info > p {
+        float: right;
+        font-size: 12px;
+        font-size: 0.85714rem; } }
 
-.twist-tag {
-  float: left; }
-  .twist-tag h2 {
-    font-family: futura-md;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 18px;
-    font-size: 1.28571rem;
-    line-height: 1.33333;
-    color: #64780a;
-    display: inline; }
-  .twist-tag .green {
-    color: #280064;
-    display: inline;
-    vertical-align: super; }
+@media screen and (min-width: 700px) {
+  .twist-tag {
+    float: left; } }
+.twist-tag h2 {
+  font-family: futura-md;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.33333;
+  color: #64780a;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-size: 1rem; }
+  @media screen and (min-width: 700px) {
+    .twist-tag h2 {
+      font-size: 18px;
+      font-size: 1.28571rem;
+      display: inline; } }
+.twist-tag .green {
+  color: #280064;
+  display: inline;
+  vertical-align: super; }
 
 /*
  * Basic post styling
@@ -310,6 +322,9 @@ footer.entry-meta {
 .widget-title {
   font-size: 100%; }
 
+#secondary aside div > p {
+  font-size: 16px;
+  font-size: 1.14286rem; }
 #secondary aside a {
   color: #280064; }
   #secondary aside a:hover {

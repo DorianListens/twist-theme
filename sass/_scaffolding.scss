@@ -18,7 +18,7 @@ body .site {
 	margin-bottom: 0;
 }
 body {
-	background-color: #eeeeee;
+	background-color: #eee;
 	font-family: $font-stack!important;
 	@include rem('font-size', $fsize);
 	text-rendering: optimizeLegibility;
@@ -68,14 +68,10 @@ padding: 10px 0!important;
 	margin: 0 auto 0 auto;
 	width: 100%;
 	@media screen and (min-width: 700px) {
-				max-width: 50%;
+				max-width: 48%!important;
+				width: auto;
 				float: right;
-
 			}
-	@media screen and (min-width: 860px) {
-			float: right;
-			width: auto;
-	}
 	display: inline;
 }
 .header-image-box {
@@ -91,11 +87,12 @@ padding: 10px 0!important;
 			font-family: futura-md;
 			text-transform: uppercase;
 			font-weight: normal;
-			@include rem('font-size', 18px );
+			@include rem('font-size', 14px );
 			line-height: ($evbase/18);
 			color: $link-color-hover;
-			@media screen and (min-width: 700px){
+			@media screen and (min-width: 800px){
 				display: inline-block;
+				@include rem('font-size', 18px);
 			}
 			display: block;
 			clear: left;
@@ -119,7 +116,7 @@ padding: 10px 0!important;
 		display: inline;
 		float: left;
 		width: auto;
-		max-width: 50%;
+		max-width: 48%;
 	}
 }
 
@@ -135,13 +132,13 @@ padding: 10px 0!important;
 nav.main-navigation {
 	border: 0;
 	margin: 0;
-	text-algin: center;
+	text-align: center;
 	@media screen and (min-width: 600px) {
 	text-align: left;
 	}
 
 	ul.nav-menu {
-	text-algin: center;
+	text-align: center;
 	@media screen and (min-width: 600px) {
 	text-align: left;
 	clear: none;
@@ -248,25 +245,35 @@ footer[role="contentinfo"] {
 			color: $link-color;
 		}
 	}
-	.site-info {
-	float: right;
-	 p {
-	 display: inline;
+	.site-info > p {
+	 display: block;
+	 text-align: center;
+	 @include rem('font-size', 11px );
+	 @media screen and (min-width: 700px){
+	 float: right;
+	 @include rem('font-size', 12px );
 	 }
-	
 	}
+	
 }
 
 .twist-tag {
-		float: left;
+		@media screen and (min-width: 700px){
+			float: left;
+		}
 		h2 {
 			font-family: futura-md;
 			text-transform: uppercase;
 			font-weight: normal;
-			@include rem('font-size', 18px );
 			line-height: ($evbase/18);
 			color: $link-color-hover;
-			display: inline;
+			display: block;
+			text-align: center;
+			@include rem('font-size', 14px );
+			@media screen and (min-width: 700px) {
+				@include rem('font-size', 18px );
+				display: inline;
+			}
 
 		}
 		.green {

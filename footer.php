@@ -12,11 +12,12 @@
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
+			<span class="twist-tag">
+		<h2 class="site-description">Creative <span class="green">Investment</span> Solutions</h2>
+		</span><!-- .twist-tag -->
 			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | Site developed by <a href="http://dorianlistens.com" target="_blank">Dorian Listens</a></p>
 		</div><!-- .site-info -->
-		<div class="twist-tag">
-		<h2 class="site-description">Creative <div class="green">Investment</div> Solutions</h2>
-	</div><!-- .twist-tag -->
+		
 	
 	</footer><!-- #colophon -->
 </div><!-- #page -->

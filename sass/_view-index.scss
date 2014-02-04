@@ -78,13 +78,18 @@ footer.entry-meta {
 .widget-title {
 	font-size: 100%;
 }
-#secondary aside a {
-	color: $link-color;
-	&:hover {
-		color: $link-color-hover;
+#secondary aside {
+	div > p {
+		@include rem('font-size', 16px);
+	}
+
+	a {
+		color: $link-color;
+		&:hover {
+			color: $link-color-hover;
+		}
 	}
 }
-
 //TWIST FINANCIAL
 .twistname {
 	text-transform: uppercase;

@@ -63,6 +63,3 @@ echo '<a href="'.$thelink.'" target="_blank">Read the Article</a>';
 }
 
 }
-
-?>
-
