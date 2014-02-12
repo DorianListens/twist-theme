@@ -4,7 +4,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-47752726-1', 'captivatormedia.com');
+  ga('create', 'UA-47752726-1', 'twistfinancial.com');
   ga('send', 'pageview');
 
 </script>
